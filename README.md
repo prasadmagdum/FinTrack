@@ -21,6 +21,7 @@ It helps users to track income, expenses, and understand their financial data th
 - Recharts  
 
 -Run Project:
+
 npm install
 
 npm run dev
