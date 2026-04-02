@@ -1,0 +1,57 @@
+.footer {
+  background: linear-gradient(135deg, #6366f1, #3b82f6);
+  color: white;
+  padding: 12px 8px;   
+  text-align: center;
+  box-shadow: 0 -3px 10px rgba(0,0,0,0.08);
+}
+
+/* TITLE */
+.footer-container h2 {
+  font-size: 16px;   /* smaller */
+  margin-bottom: 3px;
+}
+
+/* TEXT */
+.footer-container p {
+  font-size: 11px;
+  margin-bottom: 6px;
+  opacity: 0.85;
+}
+
+/* LINKS */
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 12px;   /* reduced gap */
+  margin-bottom: 6px;
+}
+
+.footer-links a {
+  font-size: 11px;
+  color: #e0e7ff;
+  text-decoration: none;
+  position: relative;
+}
+
+/* HOVER EFFECT */
+.footer-links a::after {
+  content: "";
+  width: 0%;
+  height: 1px;   /* thinner line */
+  background: white;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  transition: 0.3s;
+}
+
+.footer-links a:hover::after {
+  width: 100%;
+}
+
+/* COPYRIGHT */
+.footer span {
+  font-size: 10px;
+  opacity: 0.8;
+}

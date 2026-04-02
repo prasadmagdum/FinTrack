@@ -1,0 +1,62 @@
+.transaction-container {
+  padding: 20px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(10px);
+  margin-top: 20px;
+}
+
+.add-btn {
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  color: white;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.controls input,
+.controls select {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction-table thead {
+  background: linear-gradient(90deg, #3b82f6, #6366f1);
+  color: white;
+}
+
+.transaction-table td,
+.transaction-table th {
+  padding: 12px;
+}
+
+.transaction-table tr:hover {
+  background: #eef2ff;
+}
+
+.income {
+  color: green;
+}
+
+.expense {
+  color: red;
+}
+
+.no-data {
+  text-align: center;
+  padding: 20px;
+}

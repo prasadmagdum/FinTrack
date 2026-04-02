@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+}
+
+/* FIXED LAYOUT */
+.app-container {
+  display: flex;
+  flex-direction: column;   /* ✅ IMPORTANT */
+  min-height: 100vh;
+}
+
+/* MAIN */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* CONTENT */
+.content {
+  flex: 1;
+  padding: 20px;
+
+  width: 100%;
+  max-width: 1200px;   /* center */
+  margin: 0 auto;      /* center content */
+
+  overflow-y: auto;
+}
+
+/* REMOVE SIDEBAR COMPLETELY */
+.sidebar {
+  display: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .charts {
+    grid-template-columns: 1fr;
+  }
+}

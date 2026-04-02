@@ -1,0 +1,172 @@
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 30px;
+
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* LEFT */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* LOGO */
+.logo-link {
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #3b82f6;
+  transition: 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+/* LINKS */
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #64748b;
+  font-size: 14px;
+  position: relative;
+  padding: 5px 0;
+}
+
+/* HOVER */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #3b82f6;
+  left: 0;
+  bottom: 0;
+  transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* ACTIVE */
+.nav-links a.active {
+  color: #3b82f6;
+}
+
+.nav-links a.active::after {
+  width: 100%;
+}
+
+/* RIGHT */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* BUTTON RESET */
+.theme-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* TOGGLE BACKGROUND */
+.toggle {
+  width: 50px;
+  height: 26px;
+  background: #cbd5f5;
+  border-radius: 30px;
+  position: relative;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+/* CIRCLE */
+.toggle .circle {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  transition: 0.3s;
+}
+
+/* ACTIVE */
+.toggle.active {
+  background: linear-gradient(135deg, #6366f1, #3b82f6);
+}
+
+.toggle.active .circle {
+  transform: translateX(24px);
+}
+
+/* OPTIONAL ICONS */
+.toggle::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 3px;
+  font-size: 12px;
+}
+
+.toggle.active::after {
+  content: "";
+  left: 28px;
+}
+
+/* AVATAR */
+.avatar {
+  width: 36px;
+  height: 36px;
+
+  background: linear-gradient(135deg, #6366f1, #3b82f6);
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.avatar:hover {
+  transform: scale(1.1);
+}
+
+/* DARK MODE */
+.dark {
+  background: #020617;
+  color: #e2e8f0;
+}
+
+.dark .navbar {
+  background: rgba(15, 23, 42, 0.8);
+}
+
+.dark .nav-links a {
+  color: #cbd5f5;
+}
