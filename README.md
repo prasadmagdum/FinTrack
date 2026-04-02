@@ -1,5 +1,5 @@
-# Fintrack Dashboard UI:
-
+# Fintrack :
+Dashboard UI
  Live Demo-https://fintrack-prasad.netlify.app/
  
 -About Project:
